@@ -1,0 +1,41 @@
+.root {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+}
+.content {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+}
+.slaid-title {
+    color: white;
+    align-self: flex-end;
+    margin-left: 20px;
+    font-size: 24px;
+    display: none;
+}
+.slide-active {
+    flex: 20;
+}
+.slide-active .slaid-title {
+    display: block;
+    transition: display 0.4 ease-in;
+
+}
